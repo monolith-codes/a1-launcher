@@ -1,0 +1,34 @@
+﻿<Application x:Class="AREA1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AREA1"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+            <ControlTemplate TargetType="{x:Type Window}" x:Key="MyWindowTemplate">
+                <Border Background="Black"  CornerRadius="30">
+                    <AdornerDecorator>
+                        <ContentPresenter />
+                    </AdornerDecorator>
+                </Border>
+            </ControlTemplate>
+
+            <ControlTemplate TargetType="{x:Type Page}" x:Key="TopBarStyle">
+                <Border Background="Black" CornerRadius="30,30,0,0">
+                    <AdornerDecorator>
+                        <ContentPresenter />
+                    </AdornerDecorator>
+                </Border>
+            </ControlTemplate>
+
+
+        </ResourceDictionary>
+
+
+
+
+    </Application.Resources>
+</Application>

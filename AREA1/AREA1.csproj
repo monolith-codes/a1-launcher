@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	<SignAssembly>true</SignAssembly>
+	<AssemblyOriginatorKeyFile>area1schlüssel.pfx</AssemblyOriginatorKeyFile>
+	<ApplicationIcon>a1icobig.ico</ApplicationIcon>
+	<PackageIcon>a1icobig.png</PackageIcon>
+	<Title>A1 Launcher</Title>
+	<Version>1.0.2</Version>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\a1icosmall.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="a1icobig.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.4" />
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="WiX.Toolset" Version="3.9.1208" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\a1icosmall.png" />
+  </ItemGroup>
+
+
+</Project>
